@@ -37,7 +37,7 @@ jobs:
           pkgdir: ${{ matrix.PKGBUILDs }}
           
       - name: Publish AUR package
-        uses: KSXGitHub/github-actions-deploy-aur@v2.7.2
+        uses: KSXGitHub/github-actions-deploy-aur@master
         with:
           pkgname: ${{ matrix.PKGBUILDs }}
           pkgbuild: ${{ matrix.PKGBUILDs }}/PKGBUILD
