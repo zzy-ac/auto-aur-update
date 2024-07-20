@@ -1,7 +1,7 @@
 # Maintainer: zaoqi <zaomir@outlook.com>
 
 pkgname=koreader-bin
-pkgver=2024.03.1
+pkgver=2024.07
 pkgrel=1
 pkgdesc="An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices"
 arch=("x86_64" 'aarch64')
@@ -15,7 +15,7 @@ sha256sums_aarch64=('SKIP')
 
 build() {
   mkdir -p "${srcdir}/dpkgdir"
-  tar -xvf data.tar.xz -C "${srcdir}/dpkgdir"
+  tar -xvf data.tar.zst -C "${srcdir}/dpkgdir"
 }
 
 package() {
