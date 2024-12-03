@@ -15,7 +15,7 @@ sha256sums_aarch64=('SKIP')
 
 build() {
   mkdir -p "${srcdir}/dpkgdir"
-  tar -xvf data.tar.zst -C "${srcdir}/dpkgdir"
+  tar -xvf data.tar.xz -C "${srcdir}/dpkgdir"
 }
 
 package() {
