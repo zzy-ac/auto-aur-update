@@ -16,12 +16,13 @@ jobs:
       fail-fast: false
       matrix:
         PKGBUILDs:
-        - koreader-bin
+#        - koreader-bin
 #        - icalingua++
         - listen1
         - listen1-electron
 #        - clash-for-windows-electron-zh
         - sabaki-electron
+        - marktext-deb
 
 
 
